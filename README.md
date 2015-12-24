@@ -1,14 +1,14 @@
 # php_print
 
-Print document from PHP in Linux. Printer PECL extension works only on Windows, this is solution for unixs.
+Print a document from PHP in Linux. Printer PECL extension works on Windows only, this is the solution for Unix.
 
 #What it is?
 
-This is PHP native extension. It mean, that you need to load it via "extension=php_print.so" in php.ini, or via function call "dl('php_print.so')" in runtime.
+This is a PHP native extension. That means that you need to load it via "extension=php_print.so" in php.ini, or via function call "dl('php_print.so')" in runtime.
 
-It can send to printer documents as txt files, pdf and so. Formats are not fully tested yet, but basic plain text files and PDF are working.
+It can send documents (as txt files, pdf and others) to printer. Formats are not fully tested yet, but basic plain text files and PDFs work.
 
-This extension is just thin wrapper on CUPS library - https://www.cups.org/.
+This extension is just a thin wrapper for CUPS library.
 
 
 # How to
@@ -30,3 +30,7 @@ This extension is just thin wrapper on CUPS library - https://www.cups.org/.
 		<?php
 		print_file('document.pdf');
 		?>
+
+# Tested
+
+Works on Fedora 21 with PHP 5.6 and any printer supported by CUPS.
