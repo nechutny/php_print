@@ -18,8 +18,13 @@ This extension is just a thin wrapper for CUPS library.
 		http://www.php-cpp.com/documentation/install
 
 2) Install cups libraries
+Fedora:
 
 		sudo yum install cups-devel
+		
+Ubuntu:
+		
+		sudo apt-get install libcups2-dev
 
 3) make
 
